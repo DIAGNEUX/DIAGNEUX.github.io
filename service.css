@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins ,sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+.return{
+    width: 100%;
+    background-color: black;
+    
+}
+.return button{ 
+    height: 60px;
+    background-color:#df405a;
+    border-radius: 20px;
+    padding: 0 5px;
+    display: inline-block;
+    transition: 0.5s;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;   
+}
+.return button:hover{
+    background-color: pink;
+
+}
+
+.return button i{
+    font-size: 60px;
+    color: white;
+    
+}
+
+main{
+    padding: 0 60px;
+    
+}
+main .texte p{
+    margin: 5px 0;
+    font-size: 18px;
+}
+main .texte ul li{
+    margin: 30px 60px;
+    font-size: 22px;
+
+}
+
+
+
+main img{
+    width: 100%;
+    height: 400px;
+    
+}
+main h1{
+    text-align: center;
+}
+main .texte{
+    border-left: 1px solid rgb(113, 113, 113);
+    border-right: 1px solid rgb(113, 113, 113);
+    padding: 5px;
+}

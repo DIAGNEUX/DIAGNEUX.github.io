@@ -1,0 +1,592 @@
+:root{
+    --bcgsec1: black ;
+    --bcgsec2: black;
+    --bcgsec3: black;
+    --bcgsec4:  black;
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins ,sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    position: relative;
+}
+.sticky{
+    position: fixed;
+    bottom:0;
+    font-size: 50px;
+    right: 5px;
+    cursor: pointer;
+    color: white;
+    
+}
+#up{
+    position: fixed;
+    visibility: visible ;
+    opacity: 1;
+    bottom:0;
+    left: 0;
+    font-size: 50px;
+    right: 5px;
+    cursor: pointer;
+    color: white;
+    transition: visibility 0s, opacity 0.5s ease-in;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    color: white;
+}
+.sec1{
+    background-color: var(--bcgsec1);
+   
+}
+.sec2{
+    background-color: var(--bcgsec2);
+    
+}
+.sec3{
+    background-color: var(--bcgsec3);
+     
+}
+.sec4{
+    background-color: var(--bcgsec4);
+    
+}
+
+.logo h1{
+    color: #df405a;
+    text-transform: capitalize;
+    font-size: 50px;
+
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+
+}
+.navbar ul{
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 25px;
+    position: relative;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbar ul li::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 3px;
+    background: #df405a;
+    top: 30px;
+    scale: 0;
+    transition: 0.5s;
+
+}
+.navbar ul li:hover::before{
+    scale: 1.1
+
+}
+
+.sec1 main{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.sec1 main .left{
+    position: relative;
+
+}
+.sec1 main .left h1{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.sec1 main .left .hello{
+    font-size: 50px;
+}
+
+#text{
+    font-size: 50px;
+    color: #df405a;
+    border-right:  4px solid white;
+    
+}
+.sec1 main .left button{
+    width: 220px;
+    height: 40px;
+    background:#df405a;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.sec1 main .left button a{
+    text-decoration: none;
+    color: white;
+}
+.sec1 main .right{
+    background-color: var(--bcgsec2);
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+    width: 600px;
+    
+}
+
+.sec1 main .right #message{
+    display: none;
+}
+.sec1 main .right img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 2eme SECTION*/
+.sec2 .services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec2 main h1{
+    font-size: 30px;
+    padding: 5px 0 ;
+    text-align: center;
+}
+
+.sec2 .services ul{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2,200px);
+    gap: 50px;
+    list-style: none;
+}
+.sec2 main li{
+    position: relative;
+    cursor: pointer;
+}
+.sec2 main li img{
+    width: 70px;
+    height: 70px;
+
+}
+.sec2 .services .di{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(65, 62, 62);
+    width: 100%;
+    height: 100%;
+}
+.sec2 .services .di .bxs-hdd , .bxs-data,.bxs-network-chart{
+    font-size: 100px;
+    color: #df405a;
+}
+
+.sec2 li h2{
+    font-size: 20px;
+    text-align: center;
+}
+.sec2 .pardisk{
+    position: absolute;
+    padding-left: 5px;
+    top: 0;
+    left: 0;
+    width:  100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.5s;
+    font-size: 14px
+       
+}
+.pardisk:hover{
+    opacity: 1;
+    transform: translateY(0px);
+    box-shadow: 0 0 30px #df405a;
+}
+
+.sec2 main li button{
+    width: 110px;
+    padding: 5px;
+    background-color: #df405a;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+.sec2 main li button i{
+    font-size: 16px;
+    color: white;
+}
+.sec2 main li button a{
+    text-decoration: none;
+    color: white;
+}
+
+.sec3{
+    background-color:black;
+    width: 100%;
+    height: 300vh; 
+
+}
+.sec3 h1{
+    text-align: center;
+  
+}
+.sec3 ul li h2{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    
+}
+.sec3 .grid_countainer{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+
+}
+.sec3 .story h1{
+    margin: 20px 0;
+}
+.sec3 .story{
+    width: 100%;
+    height: 90vh;
+    padding-left: 10px;
+    margin-top: 30px;
+    
+}
+.sec3 .color{
+    background-color: aqua;
+}
+.sec3 .story ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sec3 .story ul li{
+    width: 180px;
+    display: inline;
+    
+   
+
+}
+.sec3 .par{
+    width: 180px;
+    height: 230px;
+    position: relative;
+    
+}
+.sec3 .buttom{
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+
+}
+
+.sec3 .story ul li .date{
+    width: 180px;
+    height: 200px;
+    position: relative;
+    
+
+}
+
+.sec3 .story .date img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border:  1px solid #df405a;
+    box-shadow: 0 0 20px black;
+    border-radius: 50%;
+
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    width: 70px;
+    display: block;
+}
+.bxs-home{
+    font-size: 70px;
+    color: #df405a;
+    border: 1px solid #df405a;
+    border-radius: 50%;
+}
+.sec3 .up{
+    background-color: #df405a;
+}
+.rely{
+    width: 2px;
+    height: 80px;
+    background: linear-gradient(grey,#df405a);
+    margin: auto;
+}
+.group_down{
+    width: 70px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    
+}
+.global {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.date span{
+    display: block;
+}
+
+.image .photo{
+    width:  280px;
+    height: 280px;
+    background-color: #df405a;
+    border-radius: 50%;
+}
+
+.sec3  ul li .portrait{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #df405a;
+    background-color: black;
+    margin: auto;
+    position: relative;
+
+}
+.sec3  ul li .portrait img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+.sec3 .fondateur{
+    margin-top: 20px;
+}
+.sec3 .mission{ 
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.sec3 .mission .image{
+    position: relative;
+}
+.sec3 .mission .image img{
+    width: 100%;
+    height: 100%;
+}
+.sec3 .miss_par{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec3 .ourmission{
+    margin-top: 30px;
+}
+.sec3 .miss_par p{
+    font-size: 18px;
+    
+}
+
+.sec3 .fondateur h1{
+    margin: 30px 0;
+}
+.sec3 .fondateur ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.sec3 .fondateur ul li{
+    width: 250px;
+    height: 470px;
+    background-color: grey;
+    display: inline-block;
+    padding: 10px;
+}
+.sec4 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+.sec4 h1{
+    text-align: center;
+    padding: 10px 0;
+}
+.sec4 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sec4 main h1{
+    margin: 10px 0;
+}
+.sec4 ul li{
+    width: 300px;
+    height: 440px;
+    margin: 0 10px;
+    padding: 10px;
+    border-top: 5px solid #df405a;
+    display: inline-block;
+    background-color:rgb(65, 62, 62);
+}
+.sec4 ul li .bxs-star{
+    color: orange;
+}
+.rate{
+    display: flex;
+    
+}
+.rate_photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+.rate_photo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.rate_name{
+    margin:0 10px ;
+}
+.rate_name i{
+    margin: 0 3px;
+}
+
+.sec5{
+    height: 120vh;
+    background-color: gray;
+    padding: 0;
+}
+.sec5 h1{
+    font-size: 40px;
+    text-align: center;
+}
+.sec5 .contact_image{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    
+}
+.sec5 .contact_image img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sec5 .contact_up{
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+.sec5 .contact_up h1{
+    margin-top: 60px;
+}
+.sec5 .contact_up p{
+   text-align: center;
+   font-size: 22px;
+}
+.all_contact{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+.sec5 .left_contact{
+    background-color: black;
+    padding: 40px 20px ;
+    height: 500px;
+    
+}
+.sec5 .left_contact a{
+    color: white;
+    text-decoration: none;
+}
+.sec5 .left_contact img{
+    width: 50px;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.email,.telephone  ,.adress{
+    display: flex;
+    align-items: center;
+}
+.icon_contact{
+    margin-right: 15px;
+}
+.left_contact h3{
+    border-bottom: 1px solid #df405a;
+}
+.sec5 input{
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.sec5 .right_contact{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+}
+.sec5 .right_contact form .global{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec5 .entreprise{
+    width: 100%;
+
+}
+.sec5 button{
+    width: 200px;
+    height: 40px;
+    background-color: #df405a;
+    border: none;
+    outline:none;
+    
+}
+.sec5 textarea{
+    width: 100%;
+}
+

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="ups">
+        
+        <section class="sec1" >
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/LOGOO.png" alt=""  height="70px">
+            </div>
+
+            <div class="link">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#About">A propos</a></li>
+                <li><a href="#Contact">Contact</a></li>    
+            </ul>
+        </div>
+        </div>
+        <main>
+            <div class="left">
+             <h1> <span class="hello">Bienvenue</span>  sur le site <br> d'Era Tech 
+                 votre partenaire de confiance en <br>
+                <span class="typing" id="text"><span span></span>
+                </h1> 
+                <button> <a href="sign up.html">Sign up</a></button>
+            </div>
+            <div class="right">
+                <img src="img/home-page.png" alt="">
+                <div class="sticky">
+                    <div id="message" class="icon_message">
+                       <img src="icon/icons8-facebook-48.png" alt="">
+                       <img src="icon/icons8-twitter-48.png" alt="">
+                       <img src="icon/icons8-instagram-48.png" alt="">
+                    </div>
+                    <i id="chat" onclick="mychat()" class='bx bxs-message'></i> 
+                </div>
+                <a href="#ups"><i id="up" class='bx bxs-chevron-up-circle'></i>  </a>
+            </div>
+        </main>
+    </section>
+
+
+    <section class="sec2" id="Service">
+        <main>
+            <h1>SERVICES</h1>
+            <div class="services" >
+                <ul>
+                    <li> 
+                        <h2>formatage disque dur</h2>
+                        <div class="di">
+                            <i class='bx bxs-hdd'></i>
+                        <p class="pardisk"> Era Tech peut vous aider à formater vos disques durs et à les nettoyer de toutes les données qui y sont stockées. Cela peut être utile lorsque vous souhaitez revendre ou recycler votre matériel informatique, ou lorsque vous souhaitez réinstaller un système d'exploitation....                            
+                             <button ><a href="formatage disk.html" >read more </a><i class='bx bx-chevrons-right'></i></button></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>surveillance de données</h2>
+                        <div class="di">
+                        <i class='bx bxs-network-chart'></i>
+                        <p class="pardisk">Era Tech peut vous aider à surveiller votre réseau et à détecter tous les problèmes qui pourraient survenir. L'équipe peut par exemple configurer des alertes pour vous informer en cas de panne ou de ralentissement, ou encore mettre en place des outils de diagnostic... <br>
+                            <button><a href="surveillance du reseau.html">read more</a><i class='bx bx-chevrons-right'></i></button></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>SEO</h2>
+                        <div class="di">
+                        <img src="img/icons8-seo-64.png" alt="">
+                        <p class="pardisk">Era Tech peut vous aider à optimiser votre visibilité en ligne et à améliorer votre positionnement dans les résultats de recherche. L'objectif du référencement est d'obtenir un meilleur positionnement dans les résultats de recherche pour les mots-clés qui sont pertinents... <br>
+                            <button><a href="SEO.html" >read more</a><i class='bx bx-chevrons-right'></i></button></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Base de données</h2>
+                        <div class="di">
+                        <i class='bx bxs-data'></i>
+                        <p class="pardisk"> Era Tech peut vous aider à gérer votre base de données et à assurer la maintenance de celle-ci. L'équipe peut par exemple importer des données, effectuer des sauvegardes, résoudre des problèmes de performance... <br>
+                            <button><a href="date base.html" >read more</a><i class='bx bx-chevrons-right'></i></button></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>developpement web</h2>
+                        <div class="di">
+                        <img src="img/icons8-code-64.png" alt="" width="60px" height="60px">
+                        <p class="pardisk">Era Tech peut vous aider à créer un site web sur mesure qui répond à vos besoins et à votre image de marque. L'équipe de développeurs peut mettre en place différentes fonctionnalités, comme une galerie d'images, un formulaire de contact, un système de paiement en ligne... <br>
+                            <button><a href="webdev.html" >read more</a><i class='bx bx-chevrons-right'></i></button></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>developpement application</h2>
+                        <div class="di">
+                        <img src="img/icons8-developer-mode-50.png" alt="">
+                        <p class="pardisk"> Era Tech peut vous aider à créer une application web sur mesure qui répond à vos besoins et à votre cible de clients. L'équipe de développeurs peut mettre en place différentes fonctionnalités, comme un système de login, un module de gestion de profil, une intégration avec une base de données... <br>
+                            <button><a href="appdev.html" >read more</a><i class='bx bx-chevrons-right'></i></button></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </section>
+
+    <section class="sec3" id="About">
+        <main>
+            <h1>Qui sommes-nous ?</h1>
+            <div class="grid_countainer">
+                    <div class="story">
+                        <h1>Notre histoire</h1>
+                       <ul>
+
+                        <li> 
+                            <div class="par">
+                            <p> Eratech est créée par un groupe d'étudiants en informatique qui veulent aider les petites entreprises à tirer le meilleur parti de leur technologie. </p>
+                            <h2 class="buttom">2005</h2>
+                            </div>
+                            
+                            <div class="date">
+                                <div class="group">
+                                <span class="rely"></span>
+                                <span><i class='bx bxs-home'></i></span>
+                                </div>
+                                
+  
+                            </div>
+                        </li>
+
+                        <li>
+                         <div class="date">
+                            <div class="global">
+                            <div class="group_down">  
+                            <span><img src="icon/replace.png" alt=""></span>
+                            <span class="rely"></span> 
+                            </div>
+                            </div>
+
+                         </div>
+                         <div class="line"></div>
+                             <div class="par">
+                            <h2 class="up">2008</h2>
+                            <p> Eratech lance son premier service de conception de sites Web, qui devient rapidement populaire auprès des entreprises locales. </p>
+                            
+                         </div>
+                        </li>
+
+
+                        <li> 
+                            <div class="par">
+                           <p> Eratech étend ses services pour inclure le développement de logiciels sur mesure et l'analyse de données.</p>
+                            <h2 class="buttom">2012</h2>
+                            </div>
+                            <div class="line"></div>
+                            <div class="date">
+                                <div class="group">
+                                <span class="rely"></span>
+                                <img src="icon/icons8-autour-du-globe-50.png" alt="" >
+                                </div>
+
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <div class="date">
+                                <div class="global">
+                                <div class="group_down">
+                                <img src="icon/icons8-graphique-combiné-50.png" alt="">
+                                <span class="rely"></span>
+                                </div>
+                                </div>
+
+                            </div>
+                            <div class="line"></div>
+                            <div class="par">
+                            <h2 class="up">2016</h2>
+                            <p> Eratech ouvre un deuxième bureau dans une ville voisine pour mieux servir sa clientèle croissante.</p>
+                            
+                        </div>
+                            
+                            
+                        </li>
+                        <li>
+
+                            <div class="par">
+                           <p> Eratech introduit un nouveau service de surveillance du réseau pour aider les entreprises à prévenir les temps d'arrêt coûteux.</p>
+                            <h2 class="buttom">2020</h2>
+                            
+                        </div>
+                        <div class="line"></div>
+                        <div class="date">
+                            <div class="group">
+                            <span class="rely"></span>
+                            <img src="icon/icons8-visible-80.png" alt="">
+                            </div>
+                          
+                        </div>
+                        </li>
+
+                        <li>
+                            <div class="date">
+                                 <div class="global">
+                                <div class="group_down">
+                                <img src="icon/icons8-médaille-50.png" alt="">
+                                <div class="rely"></div>
+                                </div>
+                                </div>
+                          
+                            </div>
+                            <div class="line"></div> 
+                            <div class="par">
+                            <h2 class="up">2023</h2>
+                           <p> Eratech célèbre sa 18ème année d'existence et se réjouit de continuer à aider les entreprises à réussir grâce à ses services technologiques.</p>
+                            
+                            </div> 
+                            
+                            
+                        </li>
+                    
+                       </ul>
+
+                    </div>
+                </div>
+                <div class="ourmission">
+                    <h1>Mission</h1>
+                <div class="mission">
+                    <div class="miss_par">
+                    <p>Notre mission chez Era Tech est de fournir des services de qualité en informatique et en développement web pour aider nos clients
+                         à atteindre leurs objectifs. Nous mettons notre expertise et notre innovation au service 
+                         de votre entreprise pour vous accompagner dans votre transformation
+                         digitale. Que vous ayez besoin de créer un site web sur mesure,
+                         de gérer votre base de données, de développer une application, de surveiller votre réseau, 
+                         ou d'optimiser votre visibilité en ligne (SEO), notre équipe de professionnels est là pour vous aider à réussir. 
+                         Nous sommes déterminés à vous offrir un service personnalisé et à vos côtés tout au long de votre projet.
+                    </p>
+                   </div>
+                   <div class="image">
+                    <img src="img/kisspng-computer-icons-scope-project-management-clip-art-beating-those-year-end-target-blues-new-potential-5b6abbd2efaec4.0859449815337215549818.png" alt="">
+                   </div>
+                </div>
+                </div>
+
+                
+                <div class="fondateur">
+                    <h1>L'Equipe</h1>
+                    <ul>
+                        <li>
+                            <div class="portrait">
+                                <img src="img/Razak.png" alt="">
+                            </div>
+                            <h1>Abdel Razak</h1>
+                            <p> "Commercial, je discute des conditions de vente avec les clients potentiels, en utilisant des techniques de négociation pour obtenir des résultats favorables pour l'entreprise."</p>
+                        </li>
+                        <li>
+                            <div class="portrait">
+                                <img src="img/alioune.png" alt="">
+                            </div>
+                            <h1>Alioune Diagne</h1>
+                            <p>"Developpeur, je suis responsable de la création et de la maintenance des logiciels, des applications et des systèmes informatiques qui sont utilisés par l'entreprise ou vendus à ses clients. "</p>
+                            
+                        </li>
+                        <li>
+                            <div class="portrait">
+                                <img src="img/adrien.png" alt="">
+                            </div>
+                            <h1>Adrien montoya</h1>
+                            <p>"Directeur ,je suis responsable de la gestion et de la direction d'une partie de l'entreprise."</p>
+                        </li>
+                        <li>
+                            <div class="portrait">
+                                <img src="img/kelian.png" alt="">
+                            </div>
+                            <h1>Kylian hodicq </h1>
+                            <p>"Technicien, je possède une formation technique spécifique et je suis chargée de mettre en œuvre des méthodes, des techniques et des outils pour réaliser des tâches spécifiques. "</p>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+                </div>
+            
+            
+        </div>
+            
+        </main>
+    </section>
+    <section class="sec4" >
+        <main>
+            <h1>Témoignages clients</h1>
+           <ul>
+            <li class="testa">
+                <div class="rate">
+                <div class="rate_photo">
+                    <img src="img/testamonial 2.jpg" alt="">
+                </div>
+                <div class="rate_name"> <h2>Maxime</h2> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                </div> 
+                 <figure><blockquote> <q> Era Tech a été un véritable atout pour notre entreprise. Leur équipe d'experts en référencement (SEO) a su optimiser notre visibilité en ligne et nous a permis de nous démarquer de nos concurrents. Nous avons vu une nette augmentation de notre trafic et de nos ventes grâce à leurs conseils et à leur expertise. Nous les recommandons vivement à tous ceux qui cherchent à améliorer leur stratégie de marketing en ligne</q></blockquote></figure>
+            </li>
+            <li class="testa">
+                <div class="rate">
+                <div class="rate_photo">
+                    <img src="img/testamonial.jpg" alt="">
+                </div>
+                <div class="rate_name"> <h2>Roberto</h2> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                </div> 
+                <P><q> Era Tech a été un partenaire de confiance pour notre entreprise. Leur équipe de développeurs d'applications web a su répondre à toutes nos demandes et nous a proposé des solutions sur mesure pour répondre à nos besoins. Nous sommes très satisfaits du résultat final et nous les recommandons vivement à tous ceux qui cherchent une entreprise fiable et professionnelle pour leur projet d'application.</q></P>
+            </li>
+            <li class="testa">
+                <div class="rate">
+                <div class="rate_photo">
+                    <img src="img/testamonial 1.jpg" alt="">
+                </div>
+                <div class="rate_name"> <h2>Yoshi</h2> <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i></div>
+                </div> 
+                <P><q> Nous avons fait appel à Era Tech pour le formatage de nos disques durs et nous n'avons pas été déçus. L'équipe a effectué le travail rapidement et efficacement, et a su répondre à toutes nos questions. Nous avons été très satisfaits de leur professionnalisme et nous recommandons vivement leurs services.</q></P>
+            </li>
+           
+            
+            
+           </ul>
+          
+    </section>
+    <section class="sec5" id="Contact">
+        <div class="contact_image">
+            <img src="img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt=""> 
+            <div class="contact_up">
+                <h1>Contact</h1>
+                <p>Vous avez une question ou besoin d'assistance ? <br>
+                    Nous sommes là pour vous aider avec tout ce dont vous avez besoin !</p>
+            </div>
+        </div>
+        <div class="all_contact">
+            <div class="left_contact">
+                <div class="adress">
+                    <div class="icon_contact">
+                      <img src="img/icons8-place-marker-100.png" alt="">
+                    </div>
+                    <div class="par_contact">
+                        <h3>Adresse</h3>
+                        <p><a href="">17 rue du port galand <br>
+                            bagneux,Paris</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="telephone">
+                    <div class="icon_contact">
+                    <img src="img/icons8-phone-60.png" alt="">
+                    </div>
+                    <div class="par_contact">
+                        <h3>telephone</h3>
+                        <p>01 49 25 12 25</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="icon_contact">
+                    <img src="img/icons8-envelope-100.png" alt="">
+                    </div>
+                    <div class="par_contact">
+                        <h3>email</h3>
+                        <p><a href="mailto:">Eratech@gmail.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right_contact">
+                <h1>contact nous</h1>
+            <div class="global">
+            <form action="">
+              <div><input type="text" placeholder="nome"> <input type="text" placeholder="prenom"></div>
+              <div><input type="text" class="entreprise" placeholder="Nom de l'entreprise" ></div>
+              <div><input type="email" name="" id="" placeholder="email"> <input type="number" name="" id="" placeholder="Numero" ></div>
+              <div><textarea name="" id="" cols="30" rows="10"></textarea></div>
+              <button>Envoyez</button>
+            </form>
+            </div>
+
+        </div>
+        
+    </section>
+
+    
+</div>
+
+    
+</body>
+</html>
